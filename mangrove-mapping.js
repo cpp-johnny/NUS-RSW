@@ -66,3 +66,8 @@ print(ee.String('Mangroves area (ha) inside AOI:').cat(area_mangrove));
 var extent_2020 = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/extent/gmw_v3_2020_vec");
 
 Map.addLayer(extent_2020, {palette:'black'},'GMW Extent');
+
+
+
+// link:
+// https://code.earthengine.google.com/774456588694da514dde5743017f6031?accept_repo=users%2Fcrispliming%2FGEE101_students
