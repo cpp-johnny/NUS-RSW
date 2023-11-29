@@ -46,8 +46,8 @@ var MVI = image.expression('(NIR-Green)/(SWIR-Green)',{
 //Display MVI
 // Map.addLayer(MVI, {min:0, max:12, palette: color}, ‘MVIStretch’);
 //Display mangrove extent map based on threshold
-var MVI_extent = MVI.gte(10^200).selfMask();
-Map.addLayer(MVI_extent, { palette: 'green' }, "Mangrove Extent");
+var MVI_extent = MVI.gte(10^200).selfMask();    // MVI default value is 4.5 ==> i changed it to higher number to see the data better
+Map.addLayer(MVI_extent, { palette: 'green' }, "Mangrove Extent");  // og script is 'Mangrove Extent' instead of "Mangrove ...", ran it and it gave errors, so i changed it to "" instead. 
 
 // Area pixel in hectares
 var area_ha = ee.Image.pixelArea().divide(10000);
